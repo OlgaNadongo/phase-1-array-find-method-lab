@@ -61,29 +61,18 @@ const record = [
     { year: "1960", result: "N/A"}
   ]
 
-  //loop through records
-  // find first object whose condition returns true based on a callback
 
+ function superbowlWin(record){
+     function winner(year) {  
+       return year.result === "W";
+     }
 
-
-/*
-  let searchedWin= record.find(superbowlWin);
-  console.log(searchedWin);
-
-  function superbowlWin(element){
-    return element.result === "W"
-  }
-
-  superbowlWin(record)*/
-
-function superbowlWin(record){
-    function winner(year) {  
-      return year.result === "W";
-    }
-
-    const yearWon=record.find(winner);
-      if(yearWon){
-      return yearWon.year;
-      }
+     const yearWon=record.find(winner);
+       if(yearWon){
+       return yearWon.year;
+       }
     
-}
+ }
+
+
+
