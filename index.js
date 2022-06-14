@@ -62,17 +62,23 @@ const record = [
   ]
 
 
- function superbowlWin(record){
-     function winner(year) {  
-       return year.result === "W";
-     }
+  function superbowlWin(record){
+      function winner(year) {  
+        return year.result === "W";
+      }
 
-     const yearWon=record.find(winner);
+      const yearWon=record.find(winner);
        if(yearWon){
-       return yearWon.year;
+        return yearWon.year;
        }
     
- }
+  }
+
+
+// function superbowlWin(winner){
+//   return winner.result === "W"
+// }
+// console.log(record.find(superbowlWin).year)
 
 
 
